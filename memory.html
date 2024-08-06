@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Game</title>
+  <link rel="stylesheet" href="memory.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>Memory Game</h1>
+    <div class="stats">
+      <div class="stat">Moves: <span id="moveCount">0</span></div>
+      <div class="stat">Misses: <span id="missCount">0</span></div>
+      <div class="stat">Rounds Played: <span id="roundCount">0</span></div>
+      <div class="stat">Levels: <span id="levelCount">1</span></div>
+      <div class="stat">Knowledge Points: <span id="knowledgePoints">0</span></div>
+      <div class="stat">Accuracy: <span id="accuracy">0%</span></div>
+    </div>
+    <div class="game-board" id="gameBoard">
+      <!-- Cards will be dynamically generated here -->
+    </div>
+    <button id="restartButton">Restart Game</button>
+    <div id="winnerMessage">Congratulations! You are the winner!</div>
+  </div>
+  <script src="memory.js"></script>
+</body>
+</html>
